@@ -36,12 +36,12 @@ h1 {
 }
 
 .card {
-    padding: 10px 25px 10px 25px;
-    border-radius: 10px;
-    background: #DCCCC0;
-    color: #594A47;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    background: #Dfdf7ec;
+    color: #9d3e2f;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #DCCCC0;
+    box-shadow: 0px 0px 0px 0px #Dfdf7ec;
 }
 
 .card:hover {
@@ -72,14 +72,14 @@ h1 {
     min-width: 162px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
-    font-family: 'Playlist Script', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
 }
 .greet{
     
     min-width: 162px;
     /* padding-right: 30px; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playlist Script', sans-serif;
     font-size: 1.2em;
 }
 
@@ -140,7 +140,11 @@ document.getElementById('sec').innerHTML = seconds;
 
 function twelveHour(hour) {
 if (hour > 24) {
-    return hour -= 0 
+    return hour -= 0
+} else if (hour === 0) {
+    return hour = 12;
+} else {
+    return hour
 
 }
 }
