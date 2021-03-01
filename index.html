@@ -38,10 +38,10 @@ h1 {
 .card {
     padding: 15px 15px 15px 15px;
     border-radius: 15px;
-    background: ##F5F3EF;
-    color: #642714;
+    background: ##FFFFFF;
+    color: #000000;
     display: inline-block;
-    box-shadow: 0px 0px 0px 0px ##F5F3EF;
+    box-shadow: 0px 0px 0px 0px ##FFFFFF;
 }
 
 .card:hover {
@@ -140,7 +140,7 @@ document.getElementById('sec').innerHTML = seconds;
 
 function twelveHour(hour) {
 if (hour > 12) {
-    return hour -= 0
+    return hour -= 12
 } else if (hour === 0) {
     return hour = 12;
 } else {
